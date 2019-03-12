@@ -5,9 +5,12 @@ public class Wyświetlacz {
         Kontener<Pies> psy=new Kontener();
 
         zwierzeta.list.add(new Zwierze());
+        zwierzeta.list.add(new Ssak());
+        zwierzeta.list.add(new Pies());
         ssaki.list.add(new Ssak());
-        psy.list.add(new Pies());
         ssaki.list.add(new Pies());
+        psy.list.add(new Pies());
+
 
         pokazDaneZwierze(zwierzeta);
         pokazDaneSsak(ssaki);
