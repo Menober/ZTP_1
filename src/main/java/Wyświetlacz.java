@@ -21,20 +21,26 @@ public class Wyświetlacz {
 
     private static void pokazDaneZwierze(Kontener<? extends Zwierze> z){
         System.out.println("pokazDaneZwierze");
-        for(Zwierze x:z.list)
+        for(Zwierze x:z.list){
+            x.przeciazenie();
             System.out.println("Czy żyje: "+x.czyZyje);
+        }
         System.out.println();
     }
     private static void pokazDaneSsak(Kontener<? extends Ssak> z){
         System.out.println("pokazDaneSsak");
-        for(Ssak x:z.list)
-            System.out.println("Czy żyje: "+x.czyZyje+", Czy ma pępek: "+x.maPepek);
+        for(Ssak x:z.list) {
+            x.przeciazenie();
+            System.out.println("Czy żyje: " + x.czyZyje + ", Czy ma pępek: " + x.maPepek);
+        }
         System.out.println();
     }
     private static void pokazDanePies(Kontener<? extends Pies> z){
         System.out.println("pokazDanePies");
-        for(Pies x:z.list)
-            System.out.println("Czy żyje: "+x.czyZyje+", Czy ma pępek: "+x.maPepek+", Długość ogona: "+x.dl_ogona);
+        for(Pies x:z.list) {
+            x.przeciazenie();
+            System.out.println("Czy żyje: " + x.czyZyje + ", Czy ma pępek: " + x.maPepek + ", Długość ogona: " + x.dl_ogona);
+        }
         System.out.println();
     }
 }
